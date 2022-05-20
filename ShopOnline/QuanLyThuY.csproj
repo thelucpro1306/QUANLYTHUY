@@ -6225,6 +6225,7 @@
     <Content Include="Assets\Client\images\choose2.png" />
     <Content Include="Assets\Client\images\couseling_1.PNG" />
     <Content Include="Assets\Client\images\couseling_2.PNG" />
+    <Content Include="Assets\Client\images\download.png" />
     <Content Include="Assets\Client\images\grooming.PNG" />
     <Content Include="Assets\Client\images\hiep.jpg" />
     <Content Include="Assets\Client\images\log4.jpg" />

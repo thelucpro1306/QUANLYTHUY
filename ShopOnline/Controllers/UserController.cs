@@ -106,12 +106,13 @@ namespace ShopOnline.Controllers
 
         public ActionResult UserProfile()
         {
-            var session = (ShopOnline.Common.UserLogin)Session[ShopOnline.Common.ConstantsCommon.USER_SESSION];
-            if (session != null)
-            {
-                return View(session);
-            }
-            return RedirectToAction("Index","Home");
+            //var session = (ShopOnline.Common.UserLogin)Session[ShopOnline.Common.ConstantsCommon.USER_SESSION];
+            //if (session != null)
+            //{
+            //    return View(session);
+            //}
+            //return RedirectToAction("Index","Home");
+            return View();
         }
 
         public ActionResult EditProfile()

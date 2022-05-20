@@ -35,7 +35,35 @@ html, body{
 	padding: 1rem;
 	border-radius: 0;
 }
-@media (max-width: 992px) { 
+.clear {
+    clear: both;
+}
+
+.schedule-card {
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
+    width: 15%;
+    margin: 5%;
+    float: left;
+    
+}
+
+    .schedule-card.hover {
+        box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+    }
+
+.container {
+    padding: 5px 16px;
+    
+}
+
+.card-schedule{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+@media (max-width: 992px) {
     .carousel-caption{
         
         top:20%;
@@ -105,6 +133,19 @@ hr.light {
         padding: 8px 14px;
     }
   }
+.card {
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
+    
+}
+
+    .card.hover {
+        box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+    }
+
+.container {
+    padding: 2px 16px;
+}
   @media (max-width: 576px) { 
     .carousel-caption{
         
