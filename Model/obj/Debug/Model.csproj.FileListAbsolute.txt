@@ -80,6 +80,7 @@ C:\Users\hatha\Desktop\QLTYDemo-1205\Model\bin\Debug\EntityFramework.SqlServer.x
 C:\Users\hatha\Desktop\QLTYDemo-1205\Model\bin\Debug\PagedList.xml
 C:\Users\hatha\Desktop\QLTYDemo-1205\Model\bin\Debug\PagedList.Mvc.xml
 C:\Users\hatha\Desktop\QLTYDemo-1205\Model\obj\Debug\Model.csproj.CopyComplete
+<<<<<<< HEAD
 C:\Users\hiep4\OneDrive\Máy tính\QUANLYTHUY\Model\bin\Debug\Model.dll.config
 C:\Users\hiep4\OneDrive\Máy tính\QUANLYTHUY\Model\bin\Debug\Model.dll
 C:\Users\hiep4\OneDrive\Máy tính\QUANLYTHUY\Model\bin\Debug\Model.pdb
@@ -98,3 +99,23 @@ C:\Users\hiep4\OneDrive\Máy tính\QUANLYTHUY\Model\obj\Debug\Model.csproj.CoreC
 C:\Users\hiep4\OneDrive\Máy tính\QUANLYTHUY\Model\obj\Debug\Model.csproj.CopyComplete
 C:\Users\hiep4\OneDrive\Máy tính\QUANLYTHUY\Model\obj\Debug\Model.dll
 C:\Users\hiep4\OneDrive\Máy tính\QUANLYTHUY\Model\obj\Debug\Model.pdb
+=======
+C:\Users\nhat\Desktop\QUANLYTHUY\Model\bin\Debug\Model.dll.config
+C:\Users\nhat\Desktop\QUANLYTHUY\Model\bin\Debug\Model.dll
+C:\Users\nhat\Desktop\QUANLYTHUY\Model\bin\Debug\Model.pdb
+C:\Users\nhat\Desktop\QUANLYTHUY\Model\bin\Debug\EntityFramework.dll
+C:\Users\nhat\Desktop\QUANLYTHUY\Model\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\nhat\Desktop\QUANLYTHUY\Model\bin\Debug\Microsoft.CSharp.dll
+C:\Users\nhat\Desktop\QUANLYTHUY\Model\bin\Debug\PagedList.dll
+C:\Users\nhat\Desktop\QUANLYTHUY\Model\bin\Debug\PagedList.Mvc.dll
+C:\Users\nhat\Desktop\QUANLYTHUY\Model\bin\Debug\System.dll
+C:\Users\nhat\Desktop\QUANLYTHUY\Model\bin\Debug\EntityFramework.xml
+C:\Users\nhat\Desktop\QUANLYTHUY\Model\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\nhat\Desktop\QUANLYTHUY\Model\bin\Debug\PagedList.xml
+C:\Users\nhat\Desktop\QUANLYTHUY\Model\bin\Debug\PagedList.Mvc.xml
+C:\Users\nhat\Desktop\QUANLYTHUY\Model\obj\Debug\Model.csproj.AssemblyReference.cache
+C:\Users\nhat\Desktop\QUANLYTHUY\Model\obj\Debug\Model.csproj.CoreCompileInputs.cache
+C:\Users\nhat\Desktop\QUANLYTHUY\Model\obj\Debug\Model.csproj.CopyComplete
+C:\Users\nhat\Desktop\QUANLYTHUY\Model\obj\Debug\Model.dll
+C:\Users\nhat\Desktop\QUANLYTHUY\Model\obj\Debug\Model.pdb
+>>>>>>> 40006f8aebe98038c83cc859d48262e2fc2af5a6

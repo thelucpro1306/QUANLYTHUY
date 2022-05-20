@@ -28,7 +28,7 @@
     <div class="row">
         <div class=" col-md-2">
             <div>
-                <h3 class="d-flex justify-content-center"> Client infomation</h3>
+                <h3 class="d-flex justify-content-center"> Client information</h3>               
                 <dl class="dl-horizontal">
                     <dt>
                         Name
@@ -85,6 +85,8 @@
         <div class="col-md-8 border border-primary ">
             <h3 class="d-flex justify-content-center">List Medical Examination Form</h3>
             <hr />
+            
+            <button  class="btn btn-primary "><a style="color:white" href="#">Create</a></button>
             <div>
                 <table class="table table-striped table-bordered table-hover">
                     <tr class="align-content-center">
@@ -96,7 +98,7 @@
                             Weight
                         </th>
                         <th>
-                            Hair Color  
+                            Hair Color
                         </th>
                         <th>
                             Species
@@ -116,7 +118,7 @@
                     @foreach (var item in Model)
                     {
                         var Pgender = "Male";
-                        if(item.petGender != true )
+                        if (item.petGender != true)
                         {
                             Pgender = "Female";
                         }
@@ -145,12 +147,13 @@
                                 @Html.ActionLink("Edit", "Edit", new { id = item.Form_Id }, new { @class = "pl-3 pr-4 mr-1 btn btn-primary", })
                                 @Html.ActionLink("Details", "Details", new { id = item.Form_Id }, new { @class = "mr-1 btn btn-success", })
                                 @Html.ActionLink("Delete", "Delete", new { id = item.Form_Id, }, new { @class = "btn btn-secondary", })
+
                             </td>
                         </tr>
                     }
 
                 </table>
-               
+
             </div>
         </div>
         <div class="col-md-2"></div>

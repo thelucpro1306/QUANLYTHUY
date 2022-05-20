@@ -45,5 +45,6 @@ namespace Model.EF
         public virtual User User { get; set; }
 
         public List<Servicess> list = new List<Servicess>();
+
     }
 }

@@ -156,6 +156,7 @@
     <Compile Include="Areas\Admin\Controllers\DoctorController.cs" />
     <Compile Include="Areas\Admin\Controllers\HomeController.cs" />
     <Compile Include="Areas\Admin\Controllers\LoginController.cs" />
+    <Compile Include="Areas\Admin\Controllers\MedicalExaminationFormController.cs" />
     <Compile Include="Areas\Admin\Controllers\UserController.cs" />
     <Compile Include="Areas\Admin\Data\LoginModel.cs" />
     <Compile Include="Common\CommonConstants.cs" />
@@ -6224,6 +6225,7 @@
     <Content Include="Assets\Client\images\choose2.png" />
     <Content Include="Assets\Client\images\couseling_1.PNG" />
     <Content Include="Assets\Client\images\couseling_2.PNG" />
+    <Content Include="Assets\Client\images\download.png" />
     <Content Include="Assets\Client\images\grooming.PNG" />
     <Content Include="Assets\Client\images\hiep.jpg" />
     <Content Include="Assets\Client\images\log4.jpg" />
@@ -14025,10 +14027,15 @@
     <Content Include="Assets\Admin\ckfinder\skins\bootstrap\assets\fonts\glyphicons-halflings-regular.woff2" />
     <Content Include="Assets\Admin\ckfinder\userfiles\.htaccess" />
     <Content Include="Areas\Admin\Views\Client\Details.cshtml" />
+<<<<<<< HEAD
     <Content Include="Areas\Admin\Views\User\Index.cshtml" />
     <Content Include="Areas\Admin\Views\Client\Edit.cshtml" />
     <Content Include="Areas\Admin\Views\Doctor\Index.cshtml" />
     <Content Include="Areas\Admin\Views\Doctor\Create.cshtml" />
+=======
+    <Content Include="Areas\Admin\Views\AppointmentConfirm\Details.cshtml" />
+    <Content Include="Areas\Admin\Views\MedicalExaminationForm\Create.cshtml" />
+>>>>>>> 40006f8aebe98038c83cc859d48262e2fc2af5a6
     <None Include="Scripts\jquery-3.4.1.intellisense.js" />
     <Content Include="Scripts\jquery-3.4.1.js" />
     <Content Include="Scripts\jquery-3.4.1.min.js" />
@@ -14066,6 +14073,8 @@
     <Content Include="Views\Service\PetSupplies.cshtml" />
     <Content Include="Views\Service\PetWellness.cshtml" />
     <Content Include="Views\Service\ScreeningTest.cshtml" />
+    <Content Include="Views\User\UserProfile.cshtml" />
+    <Content Include="Views\User\EditProfile.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
