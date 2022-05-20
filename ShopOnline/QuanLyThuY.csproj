@@ -154,6 +154,7 @@
     <Compile Include="Areas\Admin\Controllers\AppointmentConfirmController.cs" />
     <Compile Include="Areas\Admin\Controllers\BaseController.cs" />
     <Compile Include="Areas\Admin\Controllers\ClientController.cs" />
+    <Compile Include="Areas\Admin\Controllers\DoctorController.cs" />
     <Compile Include="Areas\Admin\Controllers\HomeController.cs" />
     <Compile Include="Areas\Admin\Controllers\LoginController.cs" />
     <Compile Include="Areas\Admin\Controllers\MedicalExaminationFormController.cs" />
@@ -6225,6 +6226,7 @@
     <Content Include="Assets\Client\images\choose2.png" />
     <Content Include="Assets\Client\images\couseling_1.PNG" />
     <Content Include="Assets\Client\images\couseling_2.PNG" />
+    <Content Include="Assets\Client\images\download.png" />
     <Content Include="Assets\Client\images\grooming.PNG" />
     <Content Include="Assets\Client\images\hiep.jpg" />
     <Content Include="Assets\Client\images\log4.jpg" />
@@ -14029,6 +14031,9 @@
     <Content Include="Areas\Admin\Views\Client\Details.cshtml" />
     <Content Include="Areas\Admin\Views\AppointmentConfirm\Details.cshtml" />
     <Content Include="Areas\Admin\Views\MedicalExaminationForm\Create.cshtml" />
+    <Content Include="Areas\Admin\Views\Client\Edit.cshtml" />
+    <Content Include="Areas\Admin\Views\Doctor\Index.cshtml" />
+    <Content Include="Areas\Admin\Views\Doctor\Create.cshtml" />
     <None Include="Scripts\jquery-3.4.1.intellisense.js" />
     <Content Include="Scripts\jquery-3.4.1.js" />
     <Content Include="Scripts\jquery-3.4.1.min.js" />
@@ -14067,7 +14072,6 @@
     <Content Include="Views\Service\PetWellness.cshtml" />
     <Content Include="Views\Service\ScreeningTest.cshtml" />
     <Content Include="Views\User\UserProfile.cshtml" />
-    <Content Include="Views\User\EditProfile.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

@@ -8,12 +8,16 @@ using System.Web.Mvc;
 
 namespace ShopOnline.Areas.Admin.Controllers
 {
-    public class UserController : BaseController
+    public class UserController : Controller
     {
         // GET: Admin/User
-        public ActionResult Index()
+        OnlineShopDBContext db = new OnlineShopDBContext();
+        public ActionResult Index(string searchString, int page = 1, int pageSize = 10)
         {
-            return View();
+            UserDao dao = new UserDao();
+            var list = dao.ListAllPaging(searchString, page, pageSize);
+            ViewBag.SearchString = searchString;
+            return View(list);
         }
 
         [HttpGet]
@@ -25,7 +29,7 @@ namespace ShopOnline.Areas.Admin.Controllers
         [HttpPost]
         public ActionResult Create(User user)
         {
-            if(ModelState.IsValid)
+            if (ModelState.IsValid)
             {
                 var dao = new UserDao();
                 var md5Pas = Encryptor.MD5Hash(user.Password);

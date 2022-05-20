@@ -3,6 +3,7 @@ using Model.VIewModel;
 using PagedList;
 using System;
 using System.Collections.Generic;
+using System.Data.Entity.Migrations;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -32,7 +33,7 @@ namespace Model.DAO
         {
             var model = from a in db.Clients
                         join b in db.MedicalExaminationForms
-                        on a.Form_Id equals b.id
+                        on a.id equals b.ClientId
                         where a.id == ClientId
                         select new MedicalFormOfClient()
                         {
@@ -43,7 +44,7 @@ namespace Model.DAO
                             email = a.email,
                             phone = a.Phone,
                             Address = a.Address,
-                            Form_Id = a.Form_Id,
+                            Form_Id = a.id,
                             User_Id = a.UserId,
                             MedicalExamFormId = b.id,
                             PetName = b.PetName,
@@ -64,6 +65,16 @@ namespace Model.DAO
             db.SaveChanges();
             return cl.id;
         }
+
+
+        public long Update(Client cl)
+        {
+
+            db.Clients.AddOrUpdate(cl);
+            db.SaveChanges();
+            return cl.id;
+        }
+
 
         public Client ViewDetails(long id)
         {

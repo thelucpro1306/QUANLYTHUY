@@ -66,6 +66,7 @@
     <Compile Include="CommonConstans.cs" />
     <Compile Include="DAO\AppointmentDao.cs" />
     <Compile Include="DAO\ClientDao.cs" />
+    <Compile Include="DAO\DoctorDao.cs" />
     <Compile Include="DAO\MenuDao.cs" />
     <Compile Include="DAO\UserDao.cs" />
     <Compile Include="EF\About.cs" />
@@ -77,6 +78,8 @@
     <Compile Include="EF\ContentTag.cs" />
     <Compile Include="EF\Credential.cs" />
     <Compile Include="EF\DeltailsMedicalForm.cs" />
+    <Compile Include="EF\Doctor.cs" />
+    <Compile Include="EF\Faculty.cs" />
     <Compile Include="EF\Feedback.cs" />
     <Compile Include="EF\Footer.cs" />
     <Compile Include="EF\illness.cs" />

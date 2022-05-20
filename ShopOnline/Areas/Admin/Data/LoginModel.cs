@@ -14,6 +14,5 @@ namespace ShopOnline.Areas.Admin.Data
         public string Username { get; set; }
         [Required(ErrorMessage = "Moi nhap Password")]
         public string Password { get; set; }
-        public bool RememberMe { get; set; }
     }
 }

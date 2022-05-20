@@ -12,10 +12,10 @@ namespace ShopOnline.Areas.Admin.Controllers
     {
         OnlineShopDBContext db = new OnlineShopDBContext();
         // GET: Admin/AppointmentConfirm
-        public ActionResult Index(string searchString,int page = 1,int pageSize=10)
+        public ActionResult Index(string searchString, int page = 1, int pageSize = 10)
         {
             var dao = new AppoimentDao();
-            var list = dao.ListAllPaging( searchString,page, pageSize);
+            var list = dao.ListAllPaging(searchString, page, pageSize);
             ViewBag.SearchString = searchString;
             return View(list);
         }
@@ -37,13 +37,13 @@ namespace ShopOnline.Areas.Admin.Controllers
                 appointmentModel.Email = model.Email;
                 appointmentModel.Phone = model.Phone;
                 appointmentModel.Note = model.Note;
-                appointmentModel.status = -1;             
+                appointmentModel.status = -1;
                 appointmentModel.BookingDate = model.BookingDate;
-                
+
                 appointmentModel.DateCreate = DateTime.Now;
                 appointmentModel.ServicesId = model.ServicesId;
-                
-                var dt = model.BookingDate; 
+
+                var dt = model.BookingDate;
                 var dtnow = DateTime.Now;
                 var res = DateTime.Compare((DateTime)dt, dtnow);
                 if (res < 0 || res == 0)
@@ -65,12 +65,12 @@ namespace ShopOnline.Areas.Admin.Controllers
             }
             return View(model);
         }
-        
+
         public ActionResult Details(long id)
         {
-            var details = db.Apointments.Where(n=>n.Id.Equals(id)).FirstOrDefault();
+            var details = db.Apointments.Where(n => n.Id.Equals(id)).FirstOrDefault();
             return View(details);
-        }        
+        }
         public ActionResult Delete(int id)
         {
             var Delete = db.Apointments.Where(n => n.Id.Equals(id)).FirstOrDefault();
@@ -89,7 +89,7 @@ namespace ShopOnline.Areas.Admin.Controllers
 
         public ActionResult Edit(int id)
         {
-            
+
             var Edit = db.Apointments.Where(n => n.Id.Equals(id)).FirstOrDefault();
             Edit.list = db.Servicesses.ToList();
             return View(Edit);
@@ -98,9 +98,9 @@ namespace ShopOnline.Areas.Admin.Controllers
         public ActionResult Edit(Apointment model)
         {
             model.list = db.Servicesses.ToList();
+            var appointmentModel = db.Apointments.SingleOrDefault(s => s.Id == model.Id);
             if (ModelState.IsValid)
             {
-                Apointment appointmentModel = new Apointment();
                 appointmentModel.Name = model.Name;
                 appointmentModel.Email = model.Email;
                 appointmentModel.Phone = model.Phone;

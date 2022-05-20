@@ -11,7 +11,7 @@
 <div class="row">
     <div class="col-8">
         <p>
-            @Html.ActionLink("Create New", "Create", "AppointmentConfirm", new { @class = "ml-2 btn btn-primary" })
+            @Html.ActionLink("Create New", "Create", "Client", new { @class = "ml-2 btn btn-primary" })
         </p>
     </div>
     @using (Html.BeginForm("index", "Client", FormMethod.Get))
@@ -48,7 +48,7 @@
             Email
         </th>
         <th>
-           Phone number
+            Phone number
         </th>
         <th>
             Address
@@ -61,12 +61,12 @@
     @foreach (var item in Model)
     {
         var a = "Male";
-        
-        if(item.gender != true)
+
+        if (item.gender != true)
         {
             a = "Female";
         }
-        
+
         <tr>
 
             <td>

@@ -41,7 +41,7 @@ namespace ShopOnline.Controllers
                     userSession.ID = user.ID;
                     userSession.Name = user.Name;
                     userSession.Email = user.Email;
-                    userSession.phone = user.Phone;
+                    userSession.Phone = user.Phone;
                     Session.Add(ConstantsCommon.USER_SESSION, userSession);
                     return RedirectToAction("Index","Home");
                 }

@@ -26,6 +26,9 @@ namespace Model.EF
         public string Password { get; set; }
 
         [StringLength(50)]
+        public string GroupID { get; set; }
+
+        [StringLength(50)]
         public string Name { get; set; }
 
         [StringLength(50)]
@@ -48,9 +51,6 @@ namespace Model.EF
 
         [StringLength(50)]
         public string Phone { get; set; }
-
-        [StringLength(50)]
-        public string GroupID { get; set; }
 
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
         public virtual ICollection<Apointment> Apointments { get; set; }

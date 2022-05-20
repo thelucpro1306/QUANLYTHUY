@@ -55,7 +55,7 @@ namespace ShopOnline.Controllers
                     ModelState.AddModelError("", "Error");
                 }
             }
-            return View(model);
+            return View("Index");
 
         }
 
