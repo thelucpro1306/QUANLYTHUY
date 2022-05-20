@@ -21,6 +21,8 @@ namespace Model.EF
         public virtual DbSet<ContentTag> ContentTags { get; set; }
         public virtual DbSet<Credential> Credentials { get; set; }
         public virtual DbSet<DeltailsMedicalForm> DeltailsMedicalForms { get; set; }
+        public virtual DbSet<Doctor> Doctors { get; set; }
+        public virtual DbSet<Faculty> Faculties { get; set; }
         public virtual DbSet<Feedback> Feedbacks { get; set; }
         public virtual DbSet<Footer> Footers { get; set; }
         public virtual DbSet<illness> illnesses { get; set; }
@@ -91,6 +93,19 @@ namespace Model.EF
             modelBuilder.Entity<DeltailsMedicalForm>()
                 .Property(e => e.Diagnose)
                 .IsUnicode(false);
+
+            modelBuilder.Entity<Doctor>()
+                .Property(e => e.Phone)
+                .IsUnicode(false);
+
+            modelBuilder.Entity<Doctor>()
+                .Property(e => e.Email)
+                .IsUnicode(false);
+
+            modelBuilder.Entity<Faculty>()
+                .HasMany(e => e.Doctors)
+                .WithOptional(e => e.Faculty)
+                .WillCascadeOnDelete();
 
             modelBuilder.Entity<Footer>()
                 .Property(e => e.ID)

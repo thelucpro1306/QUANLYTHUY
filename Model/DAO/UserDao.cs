@@ -4,14 +4,26 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using PagedList;
 namespace Model.DAO
 {
     public class UserDao
     {
+        OnlineShopDBContext db = null;
         public UserDao()
         {
+            db = new OnlineShopDBContext();
         }
-        OnlineShopDBContext db = new OnlineShopDBContext();
+        public IEnumerable<User> ListAllPaging(string searchString, int page, int pageSize)
+        {
+            IOrderedQueryable<User> query = db.Users;
+            if (!string.IsNullOrEmpty(searchString))
+            {
+                query = query.Where(x => x.Name.Contains(searchString) || x.Phone.Contains(searchString))
+                    .OrderBy(p => p.UserName);
+            }
+            return query.OrderBy(p => p.UserName).ToPagedList(page, pageSize);
+        }
         public long Insert(User user)
         {
             db.Users.Add(user);

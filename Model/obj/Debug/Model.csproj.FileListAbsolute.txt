@@ -80,3 +80,21 @@ C:\Users\hatha\Desktop\QLTYDemo-1205\Model\bin\Debug\EntityFramework.SqlServer.x
 C:\Users\hatha\Desktop\QLTYDemo-1205\Model\bin\Debug\PagedList.xml
 C:\Users\hatha\Desktop\QLTYDemo-1205\Model\bin\Debug\PagedList.Mvc.xml
 C:\Users\hatha\Desktop\QLTYDemo-1205\Model\obj\Debug\Model.csproj.CopyComplete
+C:\Users\hiep4\OneDrive\Máy tính\QUANLYTHUY\Model\bin\Debug\Model.dll.config
+C:\Users\hiep4\OneDrive\Máy tính\QUANLYTHUY\Model\bin\Debug\Model.dll
+C:\Users\hiep4\OneDrive\Máy tính\QUANLYTHUY\Model\bin\Debug\Model.pdb
+C:\Users\hiep4\OneDrive\Máy tính\QUANLYTHUY\Model\bin\Debug\EntityFramework.dll
+C:\Users\hiep4\OneDrive\Máy tính\QUANLYTHUY\Model\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\hiep4\OneDrive\Máy tính\QUANLYTHUY\Model\bin\Debug\Microsoft.CSharp.dll
+C:\Users\hiep4\OneDrive\Máy tính\QUANLYTHUY\Model\bin\Debug\PagedList.dll
+C:\Users\hiep4\OneDrive\Máy tính\QUANLYTHUY\Model\bin\Debug\PagedList.Mvc.dll
+C:\Users\hiep4\OneDrive\Máy tính\QUANLYTHUY\Model\bin\Debug\System.dll
+C:\Users\hiep4\OneDrive\Máy tính\QUANLYTHUY\Model\bin\Debug\EntityFramework.xml
+C:\Users\hiep4\OneDrive\Máy tính\QUANLYTHUY\Model\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\hiep4\OneDrive\Máy tính\QUANLYTHUY\Model\bin\Debug\PagedList.xml
+C:\Users\hiep4\OneDrive\Máy tính\QUANLYTHUY\Model\bin\Debug\PagedList.Mvc.xml
+C:\Users\hiep4\OneDrive\Máy tính\QUANLYTHUY\Model\obj\Debug\Model.csproj.AssemblyReference.cache
+C:\Users\hiep4\OneDrive\Máy tính\QUANLYTHUY\Model\obj\Debug\Model.csproj.CoreCompileInputs.cache
+C:\Users\hiep4\OneDrive\Máy tính\QUANLYTHUY\Model\obj\Debug\Model.csproj.CopyComplete
+C:\Users\hiep4\OneDrive\Máy tính\QUANLYTHUY\Model\obj\Debug\Model.dll
+C:\Users\hiep4\OneDrive\Máy tính\QUANLYTHUY\Model\obj\Debug\Model.pdb

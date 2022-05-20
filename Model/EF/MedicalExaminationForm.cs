@@ -31,7 +31,7 @@ namespace Model.EF
 
         public bool? PetGender { get; set; }
 
-        [StringLength(50)]
+        [StringLength(int.MaxValue)]
         public string Image { get; set; }
 
         public DateTime? CreateDate { get; set; }

@@ -23,6 +23,12 @@ namespace Model.DAO
             return apointment.Id;
         }
 
+        public long Update(Apointment apointment)
+        {
+            db.SaveChanges();
+            return apointment.Id;
+        }
+
         public IEnumerable<Apointment> ListAllPaging(string searchString ,int page,int pageSize)
         {
             IOrderedQueryable<Apointment> query = db.Apointments;

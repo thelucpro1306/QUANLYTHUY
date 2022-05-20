@@ -3,6 +3,8 @@ using Model.VIewModel;
 using PagedList;
 using System;
 using System.Collections.Generic;
+using System.Data.Entity;
+using System.Data.Entity.Migrations;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -61,6 +63,14 @@ namespace Model.DAO
         public long Insert(Client cl)
         {
             db.Clients.Add(cl);
+            db.SaveChanges();
+            return cl.id;
+        }
+
+        public long Update(Client cl)
+        {
+            
+            db.Clients.AddOrUpdate(cl);
             db.SaveChanges();
             return cl.id;
         }

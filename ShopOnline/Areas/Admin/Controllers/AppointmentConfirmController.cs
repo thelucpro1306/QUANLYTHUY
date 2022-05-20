@@ -98,9 +98,9 @@ namespace ShopOnline.Areas.Admin.Controllers
         public ActionResult Edit(Apointment model)
         {
             model.list = db.Servicesses.ToList();
+            var appointmentModel = db.Apointments.SingleOrDefault(s => s.Id == model.Id);
             if (ModelState.IsValid)
-            {
-                Apointment appointmentModel = new Apointment();
+            {           
                 appointmentModel.Name = model.Name;
                 appointmentModel.Email = model.Email;
                 appointmentModel.Phone = model.Phone;
@@ -119,7 +119,7 @@ namespace ShopOnline.Areas.Admin.Controllers
                     return View(model);
                 }
                 AppoimentDao dao = new AppoimentDao();
-                var rs = dao.Insert(appointmentModel);
+                var rs = dao.Update(appointmentModel);
                 if (rs > 0)
                 {
                     ViewBag.Success = "Success!";

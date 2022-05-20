@@ -82,6 +82,7 @@ namespace ShopOnline.Controllers
                     user.Email = model.Email;
                     user.CreateTime = DateTime.Now;
                     user.Status = true;
+                    user.GroupID = "MEMBER";
                     client.dob = DateTime.Now;
                     var result = dao.Insert(user);
                     if(result > 0)
