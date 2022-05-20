@@ -5,6 +5,8 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using PagedList;
+using System.Data.Entity;
+
 namespace Model.DAO
 {
     public class AppoimentDao
@@ -20,6 +22,13 @@ namespace Model.DAO
         {
             db.Apointments.Add(apointment);
             db.SaveChanges();            
+            return apointment.Id;
+        }
+
+        public long Update(Apointment apointment)
+        {
+            db.Entry(apointment).State = EntityState.Modified;
+            db.SaveChanges();
             return apointment.Id;
         }
 

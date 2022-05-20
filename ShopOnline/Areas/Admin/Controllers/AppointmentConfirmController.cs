@@ -66,7 +66,7 @@ namespace ShopOnline.Areas.Admin.Controllers
             return View(model);
         }
         
-        public ActionResult Details(int id)
+        public ActionResult Details(long id)
         {
             var details = db.Apointments.Where(n=>n.Id.Equals(id)).FirstOrDefault();
             return View(details);
@@ -119,7 +119,7 @@ namespace ShopOnline.Areas.Admin.Controllers
                     return View(model);
                 }
                 AppoimentDao dao = new AppoimentDao();
-                var rs = dao.Insert(appointmentModel);
+                var rs = dao.Update(appointmentModel);
                 if (rs > 0)
                 {
                     ViewBag.Success = "Success!";

@@ -13,6 +13,7 @@ namespace ShopOnline.Controllers
 {
     public class UserController : Controller
     {
+        OnlineShopDBContext db = new OnlineShopDBContext();
         // GET: User
         [HttpGet]
         public ActionResult Register()
@@ -102,5 +103,22 @@ namespace ShopOnline.Controllers
             }
             return View(model);
         }
+
+        public ActionResult UserProfile()
+        {
+            var session = (ShopOnline.Common.UserLogin)Session[ShopOnline.Common.ConstantsCommon.USER_SESSION];
+            if (session != null)
+            {
+                return View(session);
+            }
+            return RedirectToAction("Index","Home");
+        }
+
+        public ActionResult EditProfile()
+        {
+            
+            return View();
+        }
+            
         }
     }
