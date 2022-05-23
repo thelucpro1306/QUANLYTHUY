@@ -186,7 +186,7 @@
                 <div class="row mt-5 ">
                     <div class="col-12 col-sm-6 py-2 wow fadeInLeft">
                         @*<input type="text" class="form-control" placeholder="Full name">*@
-                        @Html.TextBoxFor(model => model.Name, new { Value = @session.UserName.ToString() ?? "0", @class = "form-control", @placeholder = "Full name" })
+                        @Html.TextBoxFor(model => model.Name, new { Value = @session.Name.ToString() ?? "0", @class = "form-control", @placeholder = "Full name" })
                         @Html.ValidationMessageFor(model => model.Name, "", new { @class = "text-danger" })
                     </div>
                     <div class="col-12 col-sm-6 py-2 wow fadeInRight">

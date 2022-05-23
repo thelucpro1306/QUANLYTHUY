@@ -81,5 +81,10 @@ namespace Model.DAO
             return db.Clients.Find(id);
         }
 
+        public List<Apointment> getAppointmentByClientID(long id)
+        {
+            var a = db.Apointments.Where(x => x.ClientID == id).ToList();
+            return a;
+        }
     }
 }

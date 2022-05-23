@@ -44,6 +44,14 @@ namespace Model.DAO
             return a;
         }
 
+
+        public Client getClientById(long id)
+        {
+            var a = db.Clients.Where(x => x.UserId == id).Single();
+            return a;
+        }
+
+
         public int Login(string Username, string Password, bool isLoginAdmin = false)
         {
             var result = db.Users.SingleOrDefault(x => x.UserName == Username && x.Password == Password);

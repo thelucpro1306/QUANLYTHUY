@@ -39,19 +39,24 @@
                      src="~/Assets/Client/images/hiep.jpg">
             </a>
              @*Dropdown - User Information*@ 
-            <div style="background-color: cadetblue;margin: 0;" class=" dropdown-menu dropdown-menu-lg-right shadow animated--grow-in m-0"
-                     aria-labelledby="userDropdown">
-                    <a class="dropdown-item" href="/user/UserProfile">
-                        <i class="fas fa-user fa-sm fa-fw mr-2 text-gray-400"></i>
-                        Profile
-                    </a>
-                    <div class="dropdown-divider"></div>
-                    <a class="dropdown-item" href="@Url.Action("Logout","user")" >
-            <i class="fas fa-sign-out-alt fa-sm fa-fw mr-2 text-gray-400"></i>
-            Logout
-        </a>
+            <div style="background-color: cadetblue;margin: 0;" class=" dropdown-menu dropdown-menu-lg-left shadow animated--grow-in m-0"
+                 aria-labelledby="userDropdown">
+                <a class="dropdown-item" href="/user/UserProfile">
+                    <i class="fas fa-user fa-sm fa-fw mr-2 text-gray-400"></i>
+                    Profile
+                </a>
+                <div class="dropdown-divider"></div>
+                <a class="dropdown-item" href="/user/schedulehistory">
+                    <i class="fas fa-user fa-sm fa-fw mr-2 text-gray-400"></i>
+                    Schedule History
+                </a>
+                <div class="dropdown-divider"></div>
+                <a class="dropdown-item" href="@Url.Action("Logout","user")">
+                    <i class="fas fa-sign-out-alt fa-sm fa-fw mr-2 text-gray-400"></i>
+                    Logout
+                </a>
 
-                </div>
+            </div>
             </li>
         }
     </ul>

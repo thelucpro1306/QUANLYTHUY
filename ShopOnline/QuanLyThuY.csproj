@@ -14072,6 +14072,7 @@
     <Content Include="Views\Service\PetWellness.cshtml" />
     <Content Include="Views\Service\ScreeningTest.cshtml" />
     <Content Include="Views\User\UserProfile.cshtml" />
+    <Content Include="Views\User\ScheduleHistory.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

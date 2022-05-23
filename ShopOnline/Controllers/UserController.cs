@@ -107,12 +107,28 @@ namespace ShopOnline.Controllers
         public ActionResult UserProfile()
         {
             var session = (ShopOnline.Common.UserLogin)Session[ShopOnline.Common.ConstantsCommon.USER_SESSION];
+            var client = new UserDao().getClientById(session.ID);
             if (session != null)
             {
-                return View(session);
+                
+                return View(client);
             }
             return RedirectToAction("Index","Home");
         }
+
+
+        public ActionResult ScheduleHistory()
+        {
+            var session = (ShopOnline.Common.UserLogin)Session[ShopOnline.Common.ConstantsCommon.USER_SESSION];
+            var client = new UserDao().getClientById(session.ID);
+            if (session != null)
+            {
+                var apointment = new ClientDao().getAppointmentByClientID(client.id);
+                return View(apointment);
+            }
+            return RedirectToAction("Index", "Home");
+        }
+
 
         public ActionResult EditProfile()
         {
